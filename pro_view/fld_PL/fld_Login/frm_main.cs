@@ -173,5 +173,19 @@ namespace pro_view.fld_PL.fld_Login
 
             f.Show();
         }
+
+        private void الطلابالمستمرينToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pro_view.fld_PL.fld_School.fld_Stu_Data.frm_Stu_Main_Data f = new fld_School.fld_Stu_Data.frm_Stu_Main_Data();
+            f.btn_New.Image = imageList_48.Images["New_48.png"];
+            f.btn_Edit.Image = imageList_48.Images["Edit_48.png"];
+            f.btn_Save.Image = imageList_48.Images["Save_48.png"];
+            f.btn_Cancel.Image = imageList_48.Images["Cancel_48.png"];
+            f.btn_Delete.Image = imageList_48.Images["Delete_48.png"];
+            f.frm_main = this;
+            f.Text = "بيانات الطلاب";
+
+            f.Show();
+        }
     }
 }
